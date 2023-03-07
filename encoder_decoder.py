@@ -5,7 +5,11 @@ def encode(string):
     return newstring
 
 def decode(string):
-    pass
+    # Ethan updated decode().
+    new_string = ''
+    for char in string:
+        new_string += str((int(char) + 7) % 10)
+    return new_string
 
 def main():
     pw = None
